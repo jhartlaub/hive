@@ -25,3 +25,8 @@ broken.rcfile
 /serde/build/
 
 hive_version.env
+#*
+*.iml
+*.rej
+*.orig
+.idea

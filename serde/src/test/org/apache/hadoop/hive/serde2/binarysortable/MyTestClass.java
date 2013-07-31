@@ -17,6 +17,7 @@
  */
 package org.apache.hadoop.hive.serde2.binarysortable;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import org.apache.hadoop.hive.serde2.lazy.ByteArrayRef;
@@ -29,6 +30,7 @@ public class MyTestClass {
   Float myFloat;
   Double myDouble;
   String myString;
+  BigDecimal myDecimal;
   MyTestInnerStruct myStruct;
   List<Integer> myList;
   ByteArrayRef myBA;
@@ -37,7 +39,7 @@ public class MyTestClass {
   }
 
   public MyTestClass(Byte b, Short s, Integer i, Long l, Float f, Double d,
-      String st, MyTestInnerStruct is, List<Integer> li, ByteArrayRef ba) {
+      String st, BigDecimal bd, MyTestInnerStruct is, List<Integer> li, ByteArrayRef ba) {
     myByte = b;
     myShort = s;
     myInt = i;
@@ -45,6 +47,7 @@ public class MyTestClass {
     myFloat = f;
     myDouble = d;
     myString = st;
+    myDecimal = bd;
     myStruct = is;
     myList = li;
     myBA = ba;
